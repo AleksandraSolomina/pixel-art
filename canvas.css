@@ -1,0 +1,24 @@
+.canvas-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.particle, .palette-item {
+    width: 8px;
+    height: 8px;
+    border: solid 1px;
+}
+
+/* .palette-red{
+    background-color:#ff0000;
+    border-color: #ff0000;
+}
+.palette-black{
+    background-color:#000000;
+    border-color:#000000;
+}
+.palette-yellow{
+    background-color:#ffff00;
+    border-color:#ffff00;
+} */
