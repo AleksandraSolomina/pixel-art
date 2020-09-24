@@ -2,23 +2,40 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+}
+.row {
+    display: flex;
+    flex-direction: row;
 }
 
 .particle, .palette-item {
-    width: 8px;
-    height: 8px;
+    width: 18px;
+    height: 18px;
     border: solid 1px;
 }
+.button {
+    padding: 7px;
+    width: 88px;
+    height: 35px;
+    border: solid 1px;
+    background-color: aquamarine;
+}
 
-/* .palette-red{
+#red{
     background-color:#ff0000;
     border-color: #ff0000;
 }
-.palette-black{
+#black{
     background-color:#000000;
     border-color:#000000;
 }
-.palette-yellow{
+#yellow{
     background-color:#ffff00;
     border-color:#ffff00;
-} */
+}
+.current-color{
+    width: 18px;
+    height: 18px;
+    border: solid 1px;
+}
