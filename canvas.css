@@ -1,4 +1,21 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(233, 221, 197);
+}
+
+.left-panel {
+    align-self: flex-start;
+    margin-left: 50px;
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+}
 .canvas-container{
+    margin-top: 80px;
+    margin-bottom: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -8,34 +25,85 @@
     display: flex;
     flex-direction: row;
 }
+.right-panel {
+    align-self: flex-end;
+    margin-right: 20px;
+    display: flex;
+    flex-direction:column;
+    align-items: flex-end;
+    margin-bottom: 35px;
+   
+}
+.palette-container, .color-picker-container, .current-color-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
-.particle, .palette-item {
-    width: 18px;
-    height: 18px;
+h3 {
+    text-align: center;
+    font-size: 18px;
+    color: rgba(116, 64, 0, 0.835);
+    margin-top: 28px;
+    margin-bottom: 8px;
+}
+#color-picker{
+    margin-left: 8px;
+}
+.current-color, .palette-item{
+    margin-left: 8px;
+    width: 21px;
+    height: 21px;
+    border: solid 1px;
+    border-radius: 5px;
+    border-color: rgb(180, 170, 170);
+}
+.current-color {
+    background-color: white;
+}
+.particle  {
+    width: 14px;
+    height:14px;
     border: solid 1px;
 }
 .button {
+    margin-top: 20px;
+    margin-right: 35px;
+    text-align: center;
     padding: 7px;
     width: 88px;
     height: 35px;
     border: solid 1px;
-    background-color: aquamarine;
+    border-radius: 5px;
+    background-color:rgba(245, 137, 4, 0.698);
+    cursor: pointer;
+}
+.button span {
+    color: cornsilk;
 }
 
 #red{
     background-color:#ff0000;
-    border-color: #ff0000;
+    /* border-color: #ff0000; */
 }
 #black{
     background-color:#000000;
-    border-color:#000000;
+    /* border-color:#000000; */
 }
 #yellow{
     background-color:#ffff00;
-    border-color:#ffff00;
+    /* border-color:#ffff00; */
 }
-.current-color{
-    width: 18px;
-    height: 18px;
-    border: solid 1px;
+#purple{
+    background-color:#551a8b;
+    /* border-color:#551a8b; */
 }
+#turquoise{
+    background-color:#40e0d0;
+    /* border-color:#40e0d0; */
+}
+#white{
+    background-color:#ffffff;
+    /* border-color:#ffffff; */
+}
+

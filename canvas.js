@@ -1,7 +1,7 @@
 const canvasContainer = document.getElementById("canvas-container");
 const particles = document.querySelectorAll(".particle");
 const paletteContainer = document.querySelector(".palette-container");
-const deleteButton = document.querySelector("input");
+const deleteButton = document.getElementById("delete-button");
 const colors = document.getElementsByClassName("palette-item");
 const current = document.querySelector(".current-color");
 const colorPicker = document.getElementById("color-picker");
@@ -23,6 +23,18 @@ paletteContainer.addEventListener("click", function(e) {
         break;
         case "black":
         theColor = "black";
+        current.style.backgroundColor = theColor;
+        break;
+        case "turquoise":
+        theColor = "turquoise";
+        current.style.backgroundColor = theColor;
+        break;
+        case "purple":
+        theColor = "purple";
+        current.style.backgroundColor = theColor;
+        break;
+        case "white":
+        theColor = "white";
         current.style.backgroundColor = theColor;
         break;
     };
